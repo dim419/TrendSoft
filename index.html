@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="./css/base.css">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
         </a>
         <div>
             <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канала <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
             </p>
             <p>
                 При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
@@ -25,8 +25,214 @@
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
+        <header class="header">
+            <div class="wrapper header__wrapper">
+                <div class="logo">
+                    <a href="#"><img src="./img/LogoHeader.png" alt="Header Logo"></a>
+                </div>
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__link">О нас</li>
+                        <li class="navigation__link">FilmToolz</li>
+                        <li class="navigation__link">DocToolz</li>
+                        <li class="navigation__link">Услуги</li>
+                        <li class="navigation__link">Контакты</li>
+                    </ul>
+                </nav>
+                <div class="header__buttons">
+                    <button class="button button_select">RU</button>
+                    <button class="button button_unselect">EN</button>
+                </div>
+            </div>
+        </header>
+        <section class = "solutions">
+            <div class="wrapper solution__wrapper">
+                <div class="solutions__content">
+                    <h1 class="solutions__title">IT решения для кино-бизнеса и не только</h1>
+                    <div class="solutions__text solutions_trend">
+                    <p>ООО “ТРЕНД-СОФТ” - созданная в 2014 году IT-компания, занимающаяся разработкой собственных сервисов для медиа-индустрии:</p>
+                    </div>
+                    <div class="solutions__text solutions_toolz"><p>FilmToolz.ru - автоматизация кинопроизводства и малого бизнеса (DocToolz.ru - автоматизация документооборота), а также осуществляющей разработку программного обеспечения под заказ.</p>
+                    </div>
+                </div>
+                <div class="solution__image">
+                    <img src="./img/solutionBack.svg" alt="">
+                    <img src="./img/solutionsImg.svg" alt="Two people are programming">
+                </div>
+            </div>
+        </section>
+        <setion class="filmtoolz">
+            <div class="wrapper filmtoolz__wrapper">
+                <h2 class="filmtoolz__title">Filmtoolz.ru - сервис автоматизации кинопроизводства</h2>
+                <div class="filmtoolz__text">
+                    <p>Созданный в В 2015 году он стал незаменимым инструментом в каждодневной работе сотен российских кинокомпаний и в настоящее время является стандартом работы для всей отрасли.</p>
+                </div>
+                <div class="filmtoolz__icons">
+                    <div class="filmtoolz__icons-users">
+                        <img src="./img/filmToolzIcon1.svg" alt="">
+                        <span>20 000 +</span>
+                        <span>Пользователей</span>
+                    </div>
+                    <div class="filmtoolz__icons-projects">
+                        <img src="./img/filmToolzIcon2.svg" alt="">
+                        <span>10 000 +</span>
+                        <span>Проектов</span>
+                    </div>
+                    <div class="filmtoolz__icons-year">
+                        <img src="./img/filmToolzIcon3.svg" alt="">
+                        <span>8 +</span>
+                        <span>Лет на рынке</span>
+                    </div>
+                </div>
+            </div>
+        </setion>
+        <section class="planning">
+            <div class="wrapper planning__wrapper">
+                <img src="./img/planningBack.svg" alt="">
+                <img src="./img/planningImg.png" alt="">
+                <div class="planning__content">
+                    <h3 class="planning__title">Модуль планирования</h3>
+                    <p class="planning__text">FilmToolz позволяет систематизировать планирование съемок, автоматически формировать и настраивать всю необходимую в процессе съемок документацию, предоставляет широкий спектр производственных отчетов и дает
+                    возможность организовать командную работу над проектом в режиме онлайн.</p>
+                    <button class="planning__button button">Подробнее</button>
+                </div>
+            </div>
+        </section>
+        <section class="budjeting">
+            <div class="wrapper budjeting__wrapper">
+                <div class="budjeting__content">
+                    <h3 class="budjeting__title">Модуль бюджетирования</h3>
+                    <p class="budjeting__text">Модуль бюджетирования предназначен для работы над бюджетом проекта и последующего учета фактических затрат кинопроизводства. FilmToolz позволяет быстро сформировать смету по типовому шаблону или создать собственный.</p>
+                    <button class="budjeting__button button">Подробнее</button>
+                </div>
+                <img src="./img/budjetingImg.png" alt="">
+                <img src="./img/budjetingBack.svg" alt="">
+            </div>
+        </section>
+        <section class="production">
+            <div class="wrapper production__wrapper">
+                <img src="./img/productionBack.svg" alt="">
+                <img src="./img/productionImg.png" alt="">
+                <div class="production__content">
+                    <h3 class="production__title">Модуль препродакшн</h3>
+                    <p class="production__content">Крупнейшая в России кастинг-база (20 000+ актеров) и модуль препродакшн позволяют автоматизировать процессы подбора актеров на роли, хранения и систематизации видеопроб проекта, а также осуществлять подбор локаций и вести работу с версиями сценариев.</p>
+                    <button class="production__button button">Подробнее</button>
+                </div>
+            </div>
+        </section>
+        <section class="casting">
+            <div class="wrapper casting__wrapper">
+                <div class="casting__content">
+                    <h2 class="casting__title">Кастинг-база</h2>
+                    <p class="casting__text">Крупнейшая в России кастинг-база (20 000+ актеров) и модуль препродакшн позволяют автоматизировать процессы подбора актеров на роли, хранения и систематизации видеопроб проекта, а также осуществлять подбор локаций и вести
+                    работу с версиями сценариев.</p>
+                    <div class="casting__icon">
+                        <div class="casting__icon-actor">
+                            <span>20 000 +</span>
+                            <span>Актеров</span>
+                        </div>
+                        <div class="casting__icon-video">
+                            <span>30 000 +</span>
+                            <span>Видео</span>
+                        </div>
+                        <div class="casting__icon-foto">
+                            <span>250 000 +</span>
+                            <span>Фото</span>
+                        </div>
+                    </div>
+                    <button class="casting__button">Подробнее</button>
+                </div>
+                <img src="./img/castingBackLeft.svg" alt="">
+                <div class="casting__image">
+                    <img src="./img/castingImg1.png" alt="">
+                    <img src="./img/castingImg2.png" alt="">
+                </div>
+                <img src="./img/castingBackRight.svg" alt="">
+            </div>
+        </section>
+        <section class="doctoolz">
+            <div class="wrapper doctoolz__wrapper">
+                <h2 class="doctoolz__title">Doctoolz.ru - облачное решение по организации документооборота </h2>
+                <img src="./img/doctoolzBackLeft.svg" alt="">
+                <div class="doctoolz__item">
+                    <img src="./img/doctoolzImg.png" alt="">
+                    <div class="doctoolz__content">
+                        <h3 class="doctoolz__subtitle">Крупнейшая в России кастинг-база</h3>
+                        <p class="doctoolz__text">Крупнейшая в России кастинг-база (20 000+ актеров) и модуль препродакшн позволяют автоматизировать процессы подбора актеров на роли, хранения и систематизации видеопроб проекта, а также осуществлять подбор локаций и вести работу с версиями сценариев.</p>
+                    </div>
+                </div>
+                <img src="./img/doctoolzBackRight.svg" alt="">
+                <div class="doctoolz__icon">
+                    <div class="doctoolz__icon-document">
+                        <img src="./img/doctoolzIcon1.svg" alt="">
+                        <span>Документы</span>
+                        <span>Настройка цепочек согласования договоров внутри
+                            компаний</span>
+                    </div>
+                    <div class="doctoolz__icon-sighting">
+                        <img src="./img/doctoolzIcon2.svg" alt="">
+                        <span>визирование</span>
+                        <span>Контроль процессов визирования</span>
+                    </div>
+                    <div class="doctoolz__icon-storage">
+                        <img src="./img/doctoolzIcon3.svg" alt="">
+                        <span>хранение</span>
+                        <span>Инструменты для хранения сканов</span>
+                    </div>
+                    <div class="doctoolz__icon-archive">
+                        <img src="./img/doctoolzIcon4.svg" alt="">
+                        <span>онлайн-архив</span>
+                        <span>Организация онлайн-архива документов</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="development">
+            <div class="wrapper development__wrapper">
+                <div class="development__content">
+                    <h2 class="development__title">Заказная разработка</h2>
+                    <p class="development__text">Трендсофт является разработчиком решений для SMART-TV (Samsung, LG и др) и предлагает комплексные продукты для запуска OTT-платформ.</p>
+                    <button class="development__button">оставить заявку</button>
+                </div>
+                <div class="development__icon">
+                    <div class="development__icon-smarttv">
+                        <img src="./img/developmentIcon1.svg" alt="">
+                        <span>Разработки для SMART-TV</span>
+                    </div>
+                    <div class="development__icon-ecommerce">
+                        <img src="./img/developmentIcon2.svg" alt="">
+                        <span>Решения для E-Commerce</span>
+                    </div>
+                    <div class="development__icon-business">
+                        <img src="./img/developmentIcon3.svg" alt="">
+                        <span>Автоматизация бизнес-процессов</span>
+                    </div>
+                    <div class="development__icon-mobile">
+                        <img src="./img/developmentIcon4.svg" alt="">
+                        <span>Mobile разработка</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="wrapper footer__wrapper">
+                <div class="footer__item">
+                    <div class="footer__question">
+                        <h3 class="footer__title">Остались вопросы?</h3>
+                        <p class="footer__text">Свяжитесь с нами:</p>
+                        <a class="footer__email" href="mailto:order@trendsoft.ru">order@trendsoft.ru</a>
+                    </div>
+                    <div class="footer__contact">
+                        <h3 class="footer__subtitle">Контакты</h3>
+                        <a class="footer__phone" href="tel:+74993425722">+7 (499) 342-57-22</a>
+                        <p class="footer__adress">Москва, ул. Правды 24, стр. 2</p>
+                    </div>
+                </div>
+                <div class="footer__requisites">
+                    <p>ООО "ТРЕНД-СОФТ", ОГРНИП 3323523523, ИНН 234234234 Россия, Москва, ул. Правды, 24, стр 2</p>
+                </div>
+            </div>
+        </footer>
     </div>
-
 </body>
 </html>
