@@ -1,0 +1,114 @@
+.casting {
+    background-color: #F9F9F9;;
+}
+
+.casting__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 5.9rem;
+}
+
+.casting__title {
+    @include font ($size: 3.4rem, $height: 4.1rem, $weight: 700);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 3rem;
+}
+
+.casting__text {
+    @include font ($size: 1.6rem, $height: 2.4rem, $weight: 300);
+    text-align: center;
+    margin: 0 0 3rem;
+}
+
+.casting__icon {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+
+.casting__icon-actor,
+.casting__icon-video,
+.casting__icon-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    :nth-child(1) {
+        @include font ($size: 4rem, $height: 4.8rem, $weight: 700);
+        text-transform: uppercase;
+        color: #F83718;
+    }
+    :nth-child(2) {
+        @include font ($size: 2.6rem, $height: 3.9rem, $weight: 300);
+    }
+}
+
+.casting__icon-video {
+    margin: 0 10rem 0;
+}
+
+.casting__button {
+    @include font ($size: 1.4rem, $height: 1.7rem, $weight: 700);
+    padding: 0.9rem 2.8rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #F83718;
+    border: 0;
+}
+
+.casting__content {
+    .casting__button {
+        display: block;
+        margin: 0 auto 2.7rem;
+    }
+}
+
+.casting__image {
+    position: relative;
+    padding: 1rem 20.56rem 2rem 4.33rem;
+}
+
+.casting__image-back-left {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: -2rem;
+    top: 41.5rem;
+}
+
+.casting__cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    top: 0rem;
+    z-index: 2;
+    background: white;
+}
+
+.casting__image-main-left {
+    display: block;
+    position: relative;
+    z-index: 3;
+    filter: drop-shadow(0px 2px 25px rgba(75, 77, 83, 0.25));
+}
+
+.casting__image-main-right {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    left: 81.5rem;
+    top: 4.5rem;
+    filter: drop-shadow(0px 2px 25px rgba(75, 77, 83, 0.25));
+}
+
+.casting__image-back-right {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 103rem;
+    top: -2.9rem;
+}

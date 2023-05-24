@@ -1,0 +1,10 @@
+.wrapper {
+    max-width: $content-width;
+    margin: 0 37.8rem;
+    @include desktop-width {
+        margin: 0 5.8rem;
+    }
+    @include tablet-width {
+        margin: 0;
+    }
+}

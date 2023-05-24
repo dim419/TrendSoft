@@ -1,0 +1,55 @@
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__image {
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    @include font ($size: 1.4rem, $height: 1.8rem, $weight: 500);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+    margin: 0;
+    padding: 4.1rem 0;
+}
+
+.navigation__link {
+    margin-right: 5rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header__buttons {
+    display: inline-flex;
+    background: #F0F0F0;
+    border-radius: 12px;
+}
+
+.button_ru {
+    align-self: center;
+    @include font ($size: 1.4rem, $height: 1.6rem, $weight: 500);
+    color: #000000;
+    padding: 1.42rem;
+    margin: 0.378rem;
+    border: 0;
+    background: #FFFFFF;
+    box-shadow: 1.38889px 1.38889px 5.55556px rgba(48, 48, 56, 0.12);
+    border-radius: 12px;
+}
+
+.button_en {
+    align-self: center;
+    @include font ($size: 1.4rem, $height: 1.6rem, $weight: 500);
+    color: #000000;
+    padding: 1.42rem;
+    border: 0;
+    border-radius: 12px;
+}

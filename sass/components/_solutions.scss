@@ -1,0 +1,54 @@
+.solutions {
+    background: $color-primary;
+}
+
+.solution__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 8.7rem 0 7.8rem;
+}
+
+.solutions__content {
+    margin: 0 6.1rem 0 0;
+}
+
+.solutions__title {
+    @include font ($size: 5rem, $height: 6rem, $weight: 700);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 1.7rem 0 3rem;
+}
+
+.solutions__text {
+    @include font ($size: 1.6rem, $height: 2.4rem, $weight: 400);
+    color: #FFFFFF;
+}
+
+.solutions_trend {
+    p {
+        margin: 0 0 2.5rem;
+    }
+}
+
+.solutions_toolz {
+    p {
+        margin: 0;
+    }
+}
+
+.solution__image {
+    position: relative;
+}
+
+.solution__image-back {
+    position: absolute;
+    z-index: 0;
+    left: -2.5rem;
+    top: 7rem;
+}
+
+.solution__image-main {
+    position: relative;
+    z-index: 1;
+}
+

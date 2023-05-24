@@ -1,0 +1,119 @@
+.doctoolz {
+    background-image: linear-gradient(#F9F9F9 50%, #01AFEB 50%);
+}
+
+.doctoolz__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctoolz__title {
+    @include font ($size: 4.0rem, $height: 4.8rem, $weight: 700);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 7rem 0 4.7rem 0;
+}
+
+.doctoolz__item {
+    display: flex;
+    position: relative;
+    border: 4px solid #F9F9F9;
+    padding: 3.75rem 9.8rem 4.8rem 8rem;
+    margin-bottom: 8.1rem;
+}
+
+.doctoolz__image {
+    position: relative;
+    padding: 1rem 20.56rem 2rem 4.33rem;
+}
+
+.doctoolz__image-back-left {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: -3rem;
+    top: 31.5rem;
+}
+
+.doctoolz__cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    top: 0rem;
+    z-index: 2;
+    background: white;
+}
+
+.doctoolz__image-main {
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+
+.doctoolz__image-back-right {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 101.5rem;
+    top: -2.8rem;
+}
+
+.doctoolz__content {
+    position: relative;
+    z-index: 3;
+    margin-left: 4.5rem;
+    margin-top: 4.5rem;
+}
+
+.doctoolz__subtitle {
+    @include font ($size: 2.4rem, $height: 2.9rem, $weight: 700);
+    text-transform: uppercase;
+    margin: 0 0 3rem 0;
+    
+}
+
+.doctoolz__text {
+    @include font ($size: 1.6rem, $height: 1.9rem, $weight: 300);
+    color: #1B1925;
+    margin: 0 0 3rem 0;
+}
+
+.doctoolz__button {
+    @include font ($size: 1.4rem, $height: 1.7rem, $weight: 700);
+    padding: 0.9rem 2.8rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #F83718;
+    border: 0;
+}
+
+.doctoolz__icon {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 9.1rem;
+}
+
+.doctoolz__icon-document,
+.doctoolz__icon-sighting,
+.doctoolz__icon-storage,
+.doctoolz__icon-archive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    :nth-child(2) {
+        @include font ($size: 2.4rem, $height: 2.9rem, $weight: 700);
+        text-transform: uppercase;
+        margin: 1.9rem 0 0.6rem;
+        color: #FFFFFF;
+    }
+    :nth-child(3) {
+        @include font ($size: 1.6rem, $height: 2.4rem, $weight: 400);
+        text-align: center;
+        color: #FFFFFF;
+    }
+}

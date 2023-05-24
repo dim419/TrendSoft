@@ -1,0 +1,15 @@
+@mixin font ($size, $height: $size, $weight: 400, $style: normal) {
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin desktop-width {
+    @media (max-width: $desktop-width) { @content; }
+}
+
+@mixin tablet-width {
+    @media (max-width: $tablet-width) { @content; }
+}
+

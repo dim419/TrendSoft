@@ -1,0 +1,65 @@
+.development__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 18.7rem 0 14.2rem;
+}
+
+.development__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.development__title {
+    @include font ($size: 4rem, $height: 4.8rem, $weight: 700);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.development__text {
+    @include font ($size: 1.6rem, $height: 1.9rem, $weight: 300);
+    text-align: center;
+    margin: 2rem 0 4.4rem;
+}
+
+.development__button {
+    @include font ($size: 1.4rem, $height: 1.7rem, $weight: 700);
+    padding: 0.9rem 2.8rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #F83718;
+    border: 0;
+}
+
+.development__icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);;
+    column-gap: 16.2rem;
+    row-gap: 6.7rem;
+    justify-items: center;
+    justify-content: center;
+}
+
+.development__icon-smarttv,
+.development__icon-ecommerce,
+.development__icon-business,
+.development__icon-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 10rem;
+        height: 10rem;
+    }
+    span {
+        @include font ($size: 2.4rem, $height: 2.9rem, $weight: 700);
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 1.6rem;
+    }
+}

@@ -1,0 +1,65 @@
+.budjeting {
+    background-color: #F9F9F9;
+    padding-bottom: 5rem;
+}
+
+.budjeting__wrapper {
+    display: flex;
+    position: relative;
+    padding: 4.1rem 5.4rem 4.1rem 5.6rem;
+}
+
+.budjeting__content {
+    position: relative;
+    z-index: 3;
+    margin: 7.5rem 0 0 2.8rem;
+}
+
+.budjeting__title {
+    @include font ($size: 2.4rem, $height: 2.9rem, $weight: 700);
+    text-transform: uppercase;
+    margin: 0 0 3rem 0;
+    
+}
+
+.budjeting__text {
+    @include font ($size: 1.6rem, $height: 1.9rem, $weight: 300);
+    color: #1B1925;
+    margin: 0 0 3rem 0;
+}
+
+.budjeting__button {
+    @include font ($size: 1.4rem, $height: 1.7rem, $weight: 700);
+    padding: 0.9rem 2.8rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #F83718;
+    border: 0;
+}
+
+.budjeting__image-back {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 102.5rem;
+    top: 32.7rem;
+}
+
+.budjeting__cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    top: 0rem;
+    z-index: 2;
+    background: white;
+}
+
+.budjeting__image-main {
+    display: block;
+    position: relative;
+    z-index: 3;
+    filter: drop-shadow(0px 2px 25px rgba(75, 77, 83, 0.25));
+}

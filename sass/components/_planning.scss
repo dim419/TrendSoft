@@ -1,0 +1,66 @@
+.planning {
+    background-image: linear-gradient(white 50%, #F9F9F9 50%);
+    padding-bottom: 5rem;
+}
+
+.planning__wrapper {
+    display: flex;
+    position: relative;
+    padding: 2rem 10.2rem 2.1rem 5.6rem;
+    border: 2px solid #F9F9F9;
+}
+
+.planning__content {
+    position: relative;
+    z-index: 2;
+    margin: 7.9rem 0 0 3.8rem;
+}
+
+.planning__title {
+    @include font ($size: 2.4rem, $height: 2.9rem, $weight: 700);
+    text-transform: uppercase;
+    margin: 0 0 3rem 0;
+    
+}
+
+.planning__text {
+    @include font ($size: 1.6rem, $height: 1.9rem, $weight: 300);
+    color: #1B1925;
+    margin: 0 0 3rem 0;
+}
+
+.planning__button {
+    @include font ($size: 1.4rem, $height: 1.7rem, $weight: 700);
+    padding: 0.9rem 2.8rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #F83718;
+    border: 0;
+}
+
+.planning__image-back {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: -2.9rem;
+    top: 32rem;
+}
+
+.planning__cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0rem;
+    top: 0rem;
+    z-index: 2;
+    background: white;
+}
+
+.planning__image-main {
+    display: block;
+    position: relative;
+    z-index: 3;
+    filter: drop-shadow(0px 2px 25px rgba(75, 77, 83, 0.25));
+}
