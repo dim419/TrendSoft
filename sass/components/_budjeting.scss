@@ -30,6 +30,7 @@
 
 .budjeting__button {
     @include font ($size: 1.4rem, $height: 1.7rem, $weight: 700);
+    @extend %transition;
     padding: 0.9rem 2.8rem;
     text-align: center;
     letter-spacing: 0.02em;
@@ -37,6 +38,9 @@
     color: #FFFFFF;
     background-color: #F83718;
     border: 0;
+    &:hover {
+        background-color: #EE816C;
+    }
 }
 
 .budjeting__image-back {

@@ -425,6 +425,13 @@ ul {
   font-weight: 700;
   src: local("Ubuntu"), url("../../fonts/ubuntu-v20-latin-700.woff2") format("woff2"), url("../../fonts/ubuntu-v20-latin-700.woff") format("woff");
 }
+.development__icon-smarttv-hover,
+.development__icon-ecommerce-hover,
+.development__icon-business-hover,
+.development__icon-mobile-hover, .development__button, .doctoolz__button, .casting__button, .production__button, .budjeting__button, .planning__button, .button_en, .button_ru, .navigation__link {
+  transition: all 0.3s ease-out;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
 }
@@ -487,6 +494,9 @@ body {
 .navigation__link:last-child {
   margin-right: 0;
 }
+.navigation__link:hover {
+  color: #F83718;
+}
 
 .header__buttons {
   display: inline-flex;
@@ -508,6 +518,9 @@ body {
   box-shadow: 1.38889px 1.38889px 5.55556px rgba(48, 48, 56, 0.12);
   border-radius: 12px;
 }
+.button_ru:hover {
+  color: #F83718;
+}
 
 .button_en {
   align-self: center;
@@ -519,6 +532,9 @@ body {
   padding: 1.42rem;
   border: 0;
   border-radius: 12px;
+}
+.button_en:hover {
+  color: #F83718;
 }
 
 .footer__wrapper {
@@ -808,6 +824,9 @@ body {
   background-color: #F83718;
   border: 0;
 }
+.planning__button:hover {
+  background-color: #EE816C;
+}
 
 .planning__image-back {
   display: block;
@@ -881,6 +900,9 @@ body {
   color: #FFFFFF;
   background-color: #F83718;
   border: 0;
+}
+.budjeting__button:hover {
+  background-color: #EE816C;
 }
 
 .budjeting__image-back {
@@ -956,6 +978,9 @@ body {
   color: #FFFFFF;
   background-color: #F83718;
   border: 0;
+}
+.production__button:hover {
+  background-color: #EE816C;
 }
 
 .production__image-back {
@@ -1061,6 +1086,9 @@ body {
   color: #FFFFFF;
   background-color: #F83718;
   border: 0;
+}
+.casting__button:hover {
+  background-color: #EE816C;
 }
 
 .casting__content .casting__button {
@@ -1218,6 +1246,9 @@ body {
   background-color: #F83718;
   border: 0;
 }
+.doctoolz__button:hover {
+  background-color: #EE816C;
+}
 
 .doctoolz__icon {
   display: flex;
@@ -1260,7 +1291,7 @@ body {
 
 .development__wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 18.7rem 0 14.2rem;
 }
 
@@ -1269,6 +1300,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 5rem;
 }
 
 .development__title {
@@ -1303,12 +1335,15 @@ body {
   background-color: #F83718;
   border: 0;
 }
+.development__button:hover {
+  background-color: #EE816C;
+}
 
 .development__icon {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  column-gap: 16.2rem;
+  column-gap: 0.5rem;
   row-gap: 6.7rem;
   justify-items: center;
   justify-content: center;
@@ -1321,6 +1356,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 40.2rem;
 }
 .development__icon-smarttv img,
 .development__icon-ecommerce img,
@@ -1340,6 +1376,56 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding-top: 1.6rem;
+}
+
+.development__icon-smarttv-hover,
+.development__icon-ecommerce-hover,
+.development__icon-business-hover,
+.development__icon-mobile-hover {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.9rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  color: #FFFFFF;
+  background: #F83718;
+  padding: 0 2.8rem;
+  opacity: 0;
+}
+
+.development__icon-smarttv {
+  position: relative;
+}
+.development__icon-smarttv:hover .development__icon-smarttv-hover {
+  opacity: 1;
+}
+
+.development__icon-ecommerce {
+  position: relative;
+}
+.development__icon-ecommerce:hover .development__icon-ecommerce-hover {
+  opacity: 1;
+}
+
+.development__icon-business {
+  position: relative;
+}
+.development__icon-business:hover .development__icon-business-hover {
+  opacity: 1;
+}
+
+.development__icon-mobile {
+  position: relative;
+}
+.development__icon-mobile:hover .development__icon-mobile-hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

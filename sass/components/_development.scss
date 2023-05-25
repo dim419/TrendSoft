@@ -1,6 +1,6 @@
 .development__wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 18.7rem 0 14.2rem;
 }
 
@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 5rem;
 }
 
 .development__title {
@@ -26,6 +27,7 @@
 
 .development__button {
     @include font ($size: 1.4rem, $height: 1.7rem, $weight: 700);
+    @extend %transition;
     padding: 0.9rem 2.8rem;
     text-align: center;
     letter-spacing: 0.02em;
@@ -33,13 +35,16 @@
     color: #FFFFFF;
     background-color: #F83718;
     border: 0;
+    &:hover {
+        background-color: #EE816C;
+    }
 }
 
 .development__icon {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);;
-    column-gap: 16.2rem;
+    column-gap: 0.5rem;
     row-gap: 6.7rem;
     justify-items: center;
     justify-content: center;
@@ -52,6 +57,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 40.2rem;
     img {
         width: 10rem;
         height: 10rem;
@@ -61,5 +67,61 @@
         text-transform: uppercase;
         text-align: center;
         padding-top: 1.6rem;
+    }
+}
+
+.development__icon-smarttv-hover,
+.development__icon-ecommerce-hover,
+.development__icon-business-hover,
+.development__icon-mobile-hover {
+    @include font ($size: 1.6rem, $height: 1.9rem, $weight: 300);
+    @extend %transition;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    color: #FFFFFF;
+    background: #F83718;
+    padding: 0 2.8rem;
+    opacity: 0;
+}
+
+.development__icon-smarttv {
+    position:relative;
+    &:hover {
+        .development__icon-smarttv-hover {
+            opacity: 1;
+        }
+    }
+}
+
+.development__icon-ecommerce {
+    position:relative;
+    &:hover {
+        .development__icon-ecommerce-hover {
+            opacity: 1;
+        }
+    }
+}
+
+.development__icon-business {
+    position:relative;
+    &:hover {
+        .development__icon-business-hover {
+            opacity: 1;
+        }
+    }
+}
+
+.development__icon-mobile {
+    position:relative;
+    &:hover {
+        .development__icon-mobile-hover {
+            opacity: 1;
+        }
     }
 }
