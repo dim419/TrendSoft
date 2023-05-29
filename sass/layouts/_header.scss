@@ -37,7 +37,7 @@
     border-radius: 12px;
 }
 
-.button_ru {
+.button_ru._active {
     align-self: center;
     @include font ($size: 1.4rem, $height: 1.6rem, $weight: 500);
     @extend %transition;
@@ -53,6 +53,19 @@
     }
 }
 
+.button_ru {
+    align-self: center;
+    @include font ($size: 1.4rem, $height: 1.6rem, $weight: 500);
+    @extend %transition;
+    color: #000000;
+    padding: 1.42rem;
+    border: 0;
+    border-radius: 12px;
+    &:hover {
+        color: #F83718;
+    }
+}
+
 .button_en {
     align-self: center;
     @include font ($size: 1.4rem, $height: 1.6rem, $weight: 500);
@@ -60,6 +73,23 @@
     color: #000000;
     padding: 1.42rem;
     border: 0;
+    border-radius: 12px;
+    &:hover {
+        color: #F83718;
+    }
+}
+
+.button_en._active {
+    align-self: center;
+    @include font ($size: 1.4rem, $height: 1.6rem, $weight: 500);
+    @extend %transition;
+    color: #000000;
+    padding: 1.42rem;
+    margin: 0.378rem;
+    border: 0;
+    border-radius: 12px;
+    background: #FFFFFF;
+    box-shadow: 1.38889px 1.38889px 5.55556px rgba(48, 48, 56, 0.12);
     border-radius: 12px;
     &:hover {
         color: #F83718;

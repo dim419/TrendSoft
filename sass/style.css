@@ -428,7 +428,7 @@ ul {
 .development__icon-smarttv-hover,
 .development__icon-ecommerce-hover,
 .development__icon-business-hover,
-.development__icon-mobile-hover, .development__button, .doctoolz__button, .casting__button, .production__button, .budjeting__button, .planning__button, .button_en, .button_ru, .navigation__link {
+.development__icon-mobile-hover, .development__button, .doctoolz__button, .casting__button, .production__button, .budjeting__button, .planning__button, .button_en._active, .button_en, .button_ru, .button_ru._active, .navigation__link {
   transition: all 0.3s ease-out;
 }
 
@@ -504,7 +504,7 @@ body {
   border-radius: 12px;
 }
 
-.button_ru {
+.button_ru._active {
   align-self: center;
   font-size: 1.4rem;
   font-style: normal;
@@ -516,6 +516,21 @@ body {
   border: 0;
   background: #FFFFFF;
   box-shadow: 1.38889px 1.38889px 5.55556px rgba(48, 48, 56, 0.12);
+  border-radius: 12px;
+}
+.button_ru._active:hover {
+  color: #F83718;
+}
+
+.button_ru {
+  align-self: center;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #000000;
+  padding: 1.42rem;
+  border: 0;
   border-radius: 12px;
 }
 .button_ru:hover {
@@ -534,6 +549,25 @@ body {
   border-radius: 12px;
 }
 .button_en:hover {
+  color: #F83718;
+}
+
+.button_en._active {
+  align-self: center;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #000000;
+  padding: 1.42rem;
+  margin: 0.378rem;
+  border: 0;
+  border-radius: 12px;
+  background: #FFFFFF;
+  box-shadow: 1.38889px 1.38889px 5.55556px rgba(48, 48, 56, 0.12);
+  border-radius: 12px;
+}
+.button_en._active:hover {
   color: #F83718;
 }
 
